@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Gama Academy</title>
+
+    <!--Chamando uma biblioteca de CSS externa-->
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!--Criando um menu com base na tabela-->
+
+    <table border="0" width="100%" class="menu">
+        <!--Inserindo uma linha na tabela-->
+        <tr>
+            <!--Inserindo colunas na tabela-->
+            <td align="center">
+                <a href="../html/index.html"><img src="../imagens/logo.png" width="200" height="50"></a>
+            </td>
+            <td align="center">QUEM SOMOS</td>
+            <td align="center">PARA PESSOAS</td>
+            <td align="center">PARA EMPRESAS</td>
+            <td align="center">CONTATO</td>
+            <td align="center">CONTEÚDOS</td>
+        </tr>
+
+    </table>
+
+    <!--Criando o formulário-->
+    <form id="contatos" method="POST">
+        <!--è uma caixa que irá armazenar os campos que compõe o nosso formulário-->
+
+        <fieldset>
+            <!--Inserindo uma legenda no form-->
+            <legend>Preencha os campos abaixo para fazer parte do nosso curso</legend>
+            <!--Criando os campos de um formulário-->
+            <label>Nome Aluno(a):</label><input type="text" name="nome_aluno" required><br><br>
+            <label>Email:</label><input type="email" name="email_aluno" required><br><br>
+            <label>Senha:</label><input type="password" name="senha_aluno"><br><br>
+
+            <!--Criando um campo de escolha-->
+            <label>Genero:</label>
+            <input type="radio" name="genero" value="Feminino" required> Feminino
+            <input type="radio" name="genero" value="Masculino" required> Masculino
+            <input type="radio" name="genero" value="Não informado" required> Não informado
+            <input type="radio" name="genero" value="Outros" required> Outros<br><br>
+
+            <!--criando um menu de opções drop-down-->
+            <label> Escolha o curso que deseja cursar</label>
+            <select>
+                <option value="" name="cursos"></option>
+                <option value="HTML" name="cursos">HTML</option>
+                <option value="CSS" name="cursos">CSS</option>
+                <option value="JS" name="cursos">JavaScript</option>
+
+            </select><br><br>
+
+            <!--Criando escolhas de período-->
+            <label>Escolha o período desejado:</label>
+            <input type="checkbox" value="Manhã" name="periodo">Manhã
+            <input type="checkbox" value="Tarde" name="periodo">Tarde
+            <input type="checkbox" value="Noite" name="periodo">Noite<br><br>
+
+            <!--Campo de data-->
+            <label>Escolha a data que deseja cursar:</label>
+            <input type="date" value="date" name="data_curso"><br><br>
+
+
+            <!--Campo de observações-->
+            <label>Mensagem</label><br>
+            <textarea name="mensagem" cols="50" rows="2" maxlength="50"></textarea><br><br>
+
+            <!--Criando um campo para anexar documentos-->
+            <label>Para realizar a sua matrículo é necessário um comprovante de residência</label>
+            <input type="file" name="arquivo"><br><br>
+
+            <!--Criando um botão de envio de dados-->
+            <input type="submit" value="Enviar">
+
+
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
